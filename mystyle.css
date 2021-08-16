@@ -1,6 +1,6 @@
 :root{
 
-    --itemSize: 6.25%;
+    --itemSize: 5.82%;
 
 }
 
@@ -18,4 +18,10 @@
 
 .flexItem{
     flex-basis: var(--itemSize);
+    border: black solid 0.5px;
+}
+
+.eraseButton{
+
+    float: right;
 }
