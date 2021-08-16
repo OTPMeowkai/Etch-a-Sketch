@@ -7,7 +7,11 @@ function addDiv(){
     flexbox.appendChild(div);
 }
 
+function color(e){
 
+    e.target.style.backgroundColor = "black";
+    
+}
 
 const flexbox = document.querySelector(".flex");
 flexbox.addEventListener("onmouseover", color);
