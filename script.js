@@ -13,12 +13,25 @@ function color(e){
     
 }
 
+function erase(e){
+
+    const div = document.querySelectorAll(".flexItem");
+
+    div.forEach(div =>{
+        div.style.backgroundColor = "white";
+    })
+    
+
+    
+}
+
 const flexbox = document.querySelector(".flex");
-flexbox.addEventListener("onmouseover", color);
-console.log(flexbox);
+const button = document.querySelector("button");
 
 for(i = 0; i < 16; i++){
     for( j = 0; j < 16; j++){
         addDiv();
     }
 }
+
+button.addEventListener("click", erase);
