@@ -1,0 +1,21 @@
+:root{
+
+    --itemSize: 6.25%;
+
+}
+
+
+.flex{
+    
+    display: flex;
+    width: 35vw;
+    height: 35vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+
+}
+
+.flexItem{
+    flex-basis: var(--itemSize);
+}
