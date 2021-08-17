@@ -1,6 +1,7 @@
 :root{
 
-    --itemSize: 5.82%;
+    --itemSize: calc(6.25% - 2px);
+
 
 }
 
@@ -8,8 +9,8 @@
 .flex{
     
     display: flex;
-    width: 35vw;
-    height: 35vw;
+    width: 540px;
+    height: 540px;
     flex-wrap: wrap;
     flex-direction: row;
     margin: auto;
@@ -18,7 +19,10 @@
 
 .flexItem{
     flex-basis: var(--itemSize);
-    border: black solid 0.5px;
+    flex-shrink: 1;
+    width: var(--itemSize);
+    height: var(--itemSize);
+    border: black solid 0.1px;
 }
 
 .eraseButton{

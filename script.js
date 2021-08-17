@@ -29,10 +29,15 @@ function erase(e){
     const div = document.querySelectorAll(".flexItem");
 
     div.forEach(div =>{
-        div.style.backgroundColor = "white";
+        flexbox.removeChild(div);
     })
     
 
+    let n = prompt("Insert the number of squares in the grid:","16")
+
+    document.documentElement.style.setProperty("--itemSize", `calc(${100 / parseInt(n)}% - 2px)`)
+    console.log(parseInt(n));
+    addDiv(n);
     
 }
 
