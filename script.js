@@ -1,10 +1,21 @@
-function addDiv(){
 
+function createDiv(){
     div = document.createElement("div");
     div.classList.add("flexItem");
     div.addEventListener("mouseenter", color);
 
-    flexbox.appendChild(div);
+    return div;
+}
+
+
+
+
+function addDiv(n){
+    for(i = 0; i < n; i++){
+        for( j = 0; j < n; j++){
+            flexbox.appendChild(createDiv());
+        }
+    }
 }
 
 function color(e){
@@ -28,10 +39,6 @@ function erase(e){
 const flexbox = document.querySelector(".flex");
 const button = document.querySelector("button");
 
-for(i = 0; i < 16; i++){
-    for( j = 0; j < 16; j++){
-        addDiv();
-    }
-}
+addDiv(16);
 
 button.addEventListener("click", erase);
