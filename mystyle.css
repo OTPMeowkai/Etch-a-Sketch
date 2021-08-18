@@ -23,9 +23,70 @@
     width: var(--itemSize);
     height: var(--itemSize);
     border: black solid 0.1px;
+    
 }
 
 .eraseButton{
 
     float: right;
+}
+
+.white{
+    background-color: hsl(0,0%,100%);
+}
+
+.black10{
+
+    background-color: hsl(0,0%,10%);  
+
+}
+
+.black20{
+
+    background-color: hsl(0,0%,20%);  
+
+}
+.black30{
+
+    background-color: hsl(0,0%,30%);  
+
+}
+.black40{
+
+    background-color: hsl(0,0%,40%);  
+
+}
+
+.black50{
+
+    background-color: hsl(0,0%,50%);  
+
+}
+
+.black60{
+
+    background-color: hsl(0,0%,60%);  
+
+}
+
+.black70{
+
+    background-color: hsl(0,0%,70%);  
+
+}
+
+.black80{
+
+    background-color: hsl(0,0%,80%);  
+
+}
+
+.black90{
+
+    background-color: hsl(0,0%,90%);  
+
+}
+
+.black{
+    background-color: hsl(0,0%,0%);
 }
