@@ -32,13 +32,14 @@ function color(e){
 function erase(e){
 
     const div = document.querySelectorAll(".flexItem");
-
+    let n;
     div.forEach(div =>{
         flexbox.removeChild(div);
     })
     
-
-    let n = prompt("Insert the number of squares in the grid:","16")
+    do{
+    n = prompt("Insert the number of squares in the grid:","16")
+    }while( n < 16 || n > 100);
 
     document.documentElement.style.setProperty("--itemSize", `calc(${100 / parseInt(n)}% - 2px)`)
     console.log(parseInt(n));
