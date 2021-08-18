@@ -1,3 +1,8 @@
+function randomValue(){
+    return(Math.round(Math.random() * 255))
+}
+
+
 
 function createDiv(){
     div = document.createElement("div");
@@ -20,7 +25,7 @@ function addDiv(n){
 
 function color(e){
 
-    e.target.style.backgroundColor = "black";
+    e.target.style.backgroundColor = `rgb(${randomValue()},${randomValue()},${randomValue()})`;
     
 }
 
@@ -45,5 +50,6 @@ const flexbox = document.querySelector(".flex");
 const button = document.querySelector("button");
 
 addDiv(16);
+randomValue();
 
 button.addEventListener("click", erase);
